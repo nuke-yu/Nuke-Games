@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>俄罗斯方块 - Tetris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="game-title">俄罗斯方块</div>
+    <div id="game-wrapper">
+      <div id="board-container">
+        <canvas id="game-canvas"></canvas>
+      </div>
+      <div id="side-panel">
+        <div id="next-piece-section">
+          <div class="panel-label">下一个</div>
+          <canvas id="next-canvas"></canvas>
+        </div>
+        <div id="score-section">
+          <div class="panel-label">分数</div>
+          <div id="score-display">0</div>
+        </div>
+        <div id="level-section">
+          <div class="panel-label">等级</div>
+          <div id="level-display">1</div>
+        </div>
+        <button id="restart-btn">重新开始</button>
+        <div id="controls-hint">
+          <div>← → 移动</div>
+          <div>↑ 旋转</div>
+          <div>↓ 加速下落</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="game-over-overlay" class="hidden">
+    <div id="game-over-content">
+      <div id="game-over-title">游戏结束</div>
+      <div id="game-over-score">得分: 0</div>
+      <button id="game-over-restart-btn">再来一局</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
